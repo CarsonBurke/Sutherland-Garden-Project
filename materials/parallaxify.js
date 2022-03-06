@@ -35,11 +35,11 @@ function parallax() {
 
         if (!item.dataset.speedMultiplier) {
 
-            item.dataset.speedMultiplier = "3"
+            item.dataset.speedMultiplier = "-1"
         }
 
         item.style.backgroundPosition = 'center'
         item.style.backgroundAttachment = "fixed"
-        item.style.backgroundPositionY = getPosition(item) * item.dataset.speedMultiplier + "px"
+        item.style.backgroundPositionY = getPosition(item) * item.dataset.speedMultiplier + "%"
     }
 }

@@ -11,12 +11,12 @@ function hotKeyManager(event) {
 
     const key = event.key
 
-    if (key == 'ArrowLeft') {
+    if (key == 'ArrowLeft' || key == 'a') {
 
         previousSlide()
         return
     }
-    if (key == 'ArrowRight') {
+    if (key == 'ArrowRight' || key == 'd') {
 
         nextSlide()
         return
