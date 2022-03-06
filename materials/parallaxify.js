@@ -38,6 +38,7 @@ function parallax() {
             item.dataset.speedMultiplier = "3"
         }
 
+        item.style.backgroundPosition = 'center'
         item.style.backgroundAttachment = "fixed"
         item.style.backgroundPositionY = getPosition(item) * item.dataset.speedMultiplier + "px"
     }
