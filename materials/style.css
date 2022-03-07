@@ -61,12 +61,55 @@ body::-webkit-scrollbar {
 }
 
 .slideText {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
 }
 
+.slideListParent {
+    font-size: 20px;
+    font-weight: bold;
+    max-width: 50%;
+    gap: 10px;
+    padding: 10px;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.slideListBG {
+    border: 1.5px solid rgba(255, 255, 255, 0.2);
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: rgba(0, 0, 0, 0.4) 0 0 40px 0;
+    backdrop-filter: blur(8px);
+    border-radius: 8px;
+}
+
+.slideImage {
+    margin: 40px;
+    max-height: 50vh;
+    height: 80%;
+    max-width: 90%;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0 0 80px 0;
+}
+
+.rowParent {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+
 .betweenSlide {
-    height: 100vh;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
